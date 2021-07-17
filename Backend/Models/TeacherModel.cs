@@ -8,6 +8,6 @@ namespace Backend.Models
 {
     class TeacherModel : PersonModel
     {
-
+        public string Subject { get; set; }
     }
 }

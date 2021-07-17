@@ -10,5 +10,6 @@ namespace Backend.Models
     {
         public int JurnalId { get; set; }
         public int PaymentId { get; set; }
+        public string Group { get; set; }
     }
 }
