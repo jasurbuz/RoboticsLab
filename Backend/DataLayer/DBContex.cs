@@ -14,6 +14,6 @@ namespace Backend.DataLayer
         {
             optionsBuilder.UseNpgsql(Constants.connectString);
         }
-        public DbSet<Student> Students { get; set; }
+        public DbSet<StudentModel> Students { get; set; }
     }
 }
