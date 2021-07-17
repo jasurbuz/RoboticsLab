@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Backend
 {
-    class Human
+    class Constants
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public int Age { get; set; }
     }
 }
