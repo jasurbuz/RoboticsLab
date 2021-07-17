@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Backend.Models
 {
-    class StudentModel : PersonModel
+    class TeacherModel : PersonModel
     {
-        public int JurnalId { get; set; }
-        public int PaymentId { get; set; }
+
     }
 }
