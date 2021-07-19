@@ -9,9 +9,9 @@ namespace Backend.Services.StudentService
 {
     interface IStudentService
     {
-        public void Add(StudentModel student);
-        public StudentModel Get(int id);
-        public void Update(int id, StudentModel student);
+        public void Add(Student student);
+        public Student Get(int id);
+        public void Update(int id, Student student);
         public void Delete(int id);
     }
 }

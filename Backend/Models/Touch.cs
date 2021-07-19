@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Backend.Models
 {
-    class TeacherModel : PersonModel
+    class Touch
     {
-        public string Subject { get; set; }
+        public int Id { get; set; }
     }
 }

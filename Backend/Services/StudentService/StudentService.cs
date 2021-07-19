@@ -11,7 +11,7 @@ namespace Backend.Services.StudentService
     class StudentService : IStudentService
     {
         DBContex DB = new DBContex();
-        public void Add(StudentModel student)
+        public void Add(Student student)
         {
             DB.Students.Add(student);
             DB.SaveChanges();
@@ -19,12 +19,12 @@ namespace Backend.Services.StudentService
 
         public void Delete(int id)
         {
-            StudentModel student = DB.Students.FirstOrDefault(p => p.Id == id);
+            Student student = DB.Students.FirstOrDefault(p => p.Id == id);
             if (student != null) DB.Students.Remove(student);
             DB.SaveChanges();
         }
 
-        public void Update(int id, StudentModel student)
+        public void Update(int id, Student student)
         {
             var model = DB.Students.FirstOrDefault(p => p.Id == id);
             if(model != null)
@@ -40,9 +40,9 @@ namespace Backend.Services.StudentService
             }
         }
 
-        public StudentModel Get(int id)
+        public Student Get(int id)
         {
-            StudentModel student = DB.Students.FirstOrDefault(p => p.Id == id);
+            Student student = DB.Students.FirstOrDefault(p => p.Id == id);
             return student;
         }
     }
